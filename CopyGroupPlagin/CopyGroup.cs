@@ -42,7 +42,6 @@ namespace CopyGroupPlagin
             transaction.Start("Копирование группы объектов");
             // все действия, кот-е касаются создания чего-л. в док-те ревит, будут относиться к пространству имён Autodesk.Revit.Creation
             doc.Create.PlaceGroup(point, group.GroupType);
-
             transaction.Commit();
 
             return Result.Succeeded;
